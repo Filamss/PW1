@@ -1,0 +1,233 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #666;
+}
+.pimg1 {
+  background-image: url(kota_tegal.jpg);
+  min-height: 600px;
+}
+.pimg2 {
+  background-image: url(img4.jpg);
+  min-height: 400px;
+}
+.pimg3 {
+  background-image: url(tugu_poci.jpg);
+  min-height: 400px;
+}
+.pimg4 {
+  background-image: url(img3.jpg);
+  min-height: 400px;
+}
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4{
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.ptext {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 27px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+.textBg {
+  color: #fff;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.section {
+  padding: 50px 80px;
+  text-align: center;
+  align-items: center;
+}
+.section p{
+  text-align: justify;
+}
+.section .heading{
+  font-weight: 700;
+  font-size: 40px;
+}
+#section-2 {
+  padding: 0;
+}
+nav{
+  padding: 35px;
+  width: 100%;
+}
+.navbar-brand{
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+}
+.nav-item a{
+  color: #fff;
+}
+.row{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.col-md-6{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+}
+.item .card{
+  align-items: center;
+  border-radius: 10px;
+  width: 680px; 
+  height: 25rem; 
+  box-shadow: 3px 5px 5px rgb(95, 51, 51);
+  cursor: pointer;
+}
+.col-md-6 img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  border-radius: 10px;
+}
+.card-body .card-title{
+  color: white;
+}
+.card-body .card-text{
+  color: white;
+  opacity: 70%;
+}
+.slider{
+  position: relative;
+  width: 100%;
+  height: 28rem;
+  overflow: hidden;
+}
+.item{
+  position: absolute;
+  padding-top: 20px;
+  width: 100px;
+  height: 100%;
+  text-align: justify;
+  border-radius: 50px;
+  transition: transform 0.5s ease-in-out;
+  left: calc(50% - 310px);
+  top: 0;
+}
+#next, #prev{
+  position: absolute;
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: xxx-large;
+  font-family: monospace;
+  font-weight: bold;
+  top: 40%;
+  z-index: 100;
+}
+
+#next {
+  right: 310px;
+  left: unset;
+}
+
+#prev {
+  left: 370px; 
+  right: unset;
+}
+#prev .prev{
+  transform: rotate(180deg);
+}
+.footer{
+  padding: 30px;
+  text-align: center;
+  align-items: center;
+}
+.row .col{
+  height: auto;
+  text-align: start;
+}
+.footer-tittle{
+  font-size: 30px;
+  font-weight: 700;
+}
+.tentang{
+  font-size: 15px;
+  font-weight: 500;
+}
+.footer-card{
+  height: auto;
+  flex-direction: column;
+  width: 100%;
+}
+.txtIcon{
+  margin-left: 0px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .ptext .textBg{
+    font-size: 24px;
+  }
+  .col-md-6 img {
+    width: 100%;
+    max-width: 100%;
+    height: 350px; 
+    border-radius: 10px;
+  }
+  .slider {
+    height: 500px;
+  }
+  .item {
+    width: 90%; 
+    top: auto;
+  }
+  .item .card {
+    width: 100%;
+    height: 100%;
+    bottom: 15px;
+  }
+  .card-body {
+    position: absolute;
+    bottom: 19%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  #next,
+  #prev {
+    font-size: xxx-large;
+    position: absolute;
+    top: 82%; 
+    z-index: 1000;
+  }
+  #next { 
+    right: unset;
+    left: 200px;
+  } 
+  #prev { 
+    right: 200px;
+    left: unset;
+  } 
+}
